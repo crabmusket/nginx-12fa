@@ -1,0 +1,4 @@
+#!/bin/bash
+
+subenv /etc/nginx/nginx.template.conf /etc/nginx/nginx.conf
+nginx "$@"
