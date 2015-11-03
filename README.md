@@ -38,10 +38,12 @@ The substitution script _only_ accepts environment variables enclosed in `{}`, b
 
     $ cat test
     where am I? ${HOME}
+    Wrong $FORMAT
     Escaping \${HOME}
     This variable ${IS_NOT_IN_THE_ENV}
 
     $ ./subenv test test.out && cat test.out
     Where am I? /home/daniel
-    Escaping \${HOME}
+    Wrong $FORMAT
+    Escaping ${HOME}
     This variable 
