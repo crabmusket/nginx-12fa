@@ -28,7 +28,7 @@ For example:
 Run:
 
     $ docker run -d --name nginx \
-        -v $(pwd)/nginx.conf:/etc/nginx/nginx/template.conf
+        -v $(pwd)/nginx.conf:/etc/nginx/nginx.template.conf
         -e "REDIRECT_URL=google.com" \
         eightyeight/nginx-12fa:1.9
 
